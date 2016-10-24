@@ -1,0 +1,48 @@
+html, body{
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Halant', serif;
+  color: #223A49;
+}
+h1, h2, h3 h4, h5, h6 {
+  font-family: 'ABeeZee', sans-serif;
+}
+h2 {
+  font-size: 28px; 
+  font-weight: normal;
+  margin-bottom: 5px;  
+}
+p {
+  font-size: 16px; 
+  line-height: 19px; 
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 36px;
+  color: #156B61;
+}
+/* Grid */
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15 px; 
+  padding-right: 15 px;
+  position: relative;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%; 
+  float: left; 
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
