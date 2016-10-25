@@ -19,10 +19,7 @@ p {
   font-weight: 100;
 }
 
-h1 {
-  font-size: 36px;
-  color: #156B61;
-}
+
 /* Grid */
 
 .container {
@@ -45,4 +42,161 @@ h1 {
   position: relative;
   min-height: 1px;
   margin: 0 2% 20px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Create an extra-large media query to target TV sets, 
+and change the attributes of the text elements within the hero section.*/
+
+/* Since the tv media type has been deprecated accoring to w3schools, 
+I've used my 32 inch HD TV screen in my home for the example below.*/
+
+/* Using http://whatsmyscreenresolution.com, my browser window resolution is and 2166 x 1100 when hooked directly into my HD TV. */
+
+/*I've increased the original sizes of the text elements in the hero by 2-3 times the original size.*/
+
+
+@media (min-width: 2100px) {
+  header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 45px;
+}
+
+
+header nav ul > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+header .hero h1 {
+  font-size: 96px;
+  font-weight: normal;
+  margin: 95px 0 0;
+}
+
+header .hero p {
+  font-size: 44px;
+  line-height: 26px;
+  font-weight: 100;
+  margin: 20px 0 80px;
+}
+
+}
+
+/* Header */
+
+header {
+  color:#FFFFFF;
+  background: #F2F6F1;
+  /* Gradient: */
+background-image: linear-gradient(-180deg, #2FA49A 0%, #156B61 100%);
+background-image: linear-gradient(154deg, #156B61 6%, rgba(111,209,134,0.80) 100%);
+}
+
+header nav {
+  padding:1em 0;
+}
+
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin:0;
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+}
+
+header nav ul > li.btn-outline {
+  padding: 10px 15px;
+  border: 2x solid #FFFFFF;
+  border-radius: 4px;
+}
+
+header nav ul > li.btn-outline:hover {
+  background: #FFFFFF;
+}
+
+header nav ul > li > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header nav ul > li > a:hover {
+  color: #156B61;
+  text-decoration: none;
+}
+
+header nav ul > li.btn-outline:hover {
+  color: #156B61;
+}
+
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+header .hero h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 95px 0 0;
+}
+
+header .hero p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 100;
+  margin: 10px 0 40px;
+}
+
+header .hero img {
+  display: block;
+  margin: 3em auto 0;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #6FD186;
+  border: 2px solid #6FD186;
+  box-shadow: 0px 2px 0px 0px #156B61;
 }
