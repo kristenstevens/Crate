@@ -372,3 +372,81 @@ header .hero img {
 .staggered li {
   margin-top: 20px;  
 }
+
+/* Final Call to Action */
+
+.container-action h2 {
+ color: #223A49;
+ text-align: center;
+ margin-bottom: 20px;
+} 
+
+
+.container-action p {
+ color: #223A49;
+ text-align: center;
+ margin-bottom: 100px;
+} 
+
+.container-action .btn {
+  position: relative;
+  bottom: 60px;
+  left: 550px;
+  right: 20px;
+}
+/* Footer */
+
+footer {
+  background-color: #156B61;
+  background-image: linear-gradiant(to top, #156B61 0%, #156B61 50%, #6FD186 50%, #6FD186 100%);
+  color: #FFFFFF;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+footer p, footer nav ul {
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  margin: 10px autp 0;
+}
+
+footer nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer .right-footer-block {
+  background-color: transparent;
+}
+
+footer .logo {
+  padding: 2.35em 0;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 992px) {}
+  footer {
+    background-color: #156B61;
+    background-image: linear-gradient(to left,
+        #6FD186 0%, #6FD186 33.33337%, #156B61 33.33337%, #156B61 100%);
+    height: 100px;
+   }
+   
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+
+   footer .logo {
+     padding: 2em 0 2em 1.5em;
+   }
+ }
