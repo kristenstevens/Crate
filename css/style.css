@@ -20,7 +20,7 @@ p {
 }
 
 
-/* Grid */
+/* GRID */
 
 .container {
   margin-right: auto;
@@ -44,7 +44,7 @@ p {
   margin: 0 2% 20px;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .container {
@@ -113,7 +113,7 @@ header .hero p {
 
 }
 
-/* Header */
+/* HEADER */
 
 header {
   color:#FFFFFF;
@@ -140,32 +140,30 @@ header nav ul > li {
   margin:0 15px;
 }
 
-header nav ul > li.btn-outline {
-  padding: 10px 15px;
-  border: 2x solid #FFFFFF;
-  border-radius: 4px;
-}
-
-header nav ul > li.btn-outline:hover {
-  background: #FFFFFF;
-}
 
 header nav ul > li > a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-header nav ul > li > a:hover {
-  color: #156B61;
+header nav ul > li > a :hover {
+  color: #FFFFFF;
   text-decoration: none;
 }
 
-header nav ul > li.btn-outline:hover {
-  color: #156B61;
+header nav .btn-outline {
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+header nav .btn-outline :hover {
+  color: #FFFFFF;
 }
 
 header .hero {
-  text-align: center;
+  text-align: left;
   display: block;
   position: relative;
 }
@@ -188,7 +186,7 @@ header .hero img {
   margin: 3em auto 0;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn {
   border-radius: 4px;
@@ -201,11 +199,13 @@ header .hero img {
   box-shadow: 0px 2px 0px 0px #156B61;
 }
 
-/* Benefits */
+/* BENEFITS */
+
 .benefits {
   text-align: center;
   display: block;
   position: relative;
+  background: #F2F6F1;
 }
 
 .benefits ul {
@@ -216,7 +216,9 @@ header .hero img {
 .benefits ul li {
   list-style-type: none;
   display: inline-block;
+    margin-bottom: 40px;
 }
+
 
 .benefits i {
   color: #223A49;
@@ -229,11 +231,10 @@ header .hero img {
   color: #223A49;
 }
 
-/* Pricing */
+/* PRICING */
 
 .pricing {
-  background: #BFF1CB url("") top center no-repeat;
-  background: url() top center no-repeat, linear-gradient();
+  background: #BFF1CB;
   background-size: cover;
   text-align: center;
   padding: 4em 0;
@@ -248,13 +249,15 @@ header .hero img {
   padding: 0 15px 15px;
   background: #F2F6F1;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-  min-height: 439px;
+  height: 385px;
   position: relative;
 }
 
+.outer-box li {
+  margin-top: 40px;
+}
 .box.middle {
-  min-height: 485px;
-  margin-top: 0px;
+  height: 425px;
 }
 
 .box h3 {
@@ -309,96 +312,90 @@ header .hero img {
   text-align: center;
 }
 
-/* Testimonials */
+/* TESTIMONIALS */
 
 .testimonials {
-  padding: 4em 0;
+  background: #FFFFFF; 
+}
+
+.user-photo-1 {
+  float: left;
+}
+
+.user-photo-2 {
+  float: left;
+}
+
+.user-photo-3 {
+  float: right;
+}
+
+/* Hover states to show different user quotes. */
+
+.user-photo-1 img :hover {
+  /* Desired action: up arrow appears on user photo that 
+  is being hovered on, and user quote changes.*/ 
+}
+
+.user-photo-2 img :hover {
+  /* Desired action: up arrow appears on user photo that 
+  is being hovered on, and user quote changes.*/ 
+}
+
+.user-photo-3 img :hover {
+ /* Desired action: up arrow appears on user photo that 
+  is being hovered on, and user quote changes.*/   
+}
+
+.blockquote {
+  font-family: "Halant", serif;
+  font-size: 20px;
   text-align: center;
-  color: #223A49;
 }
 
-.testimonials h2{
-  color: #223A49;
+
+.blockquote span.quotation {
+  font-size: 50px;
+   color: #7CC3CB;
 }
 
-.testimonials ul li {
-  list-style-type: none;
+.blockquote p {
+  font-size: 20px;
 }
 
-.testimonials blockquote {
-  color: #FFFFFF;
-  text-align: left;
-  font-style: italic;
-  background: #223A49;
-  position: relative;
-  padding: 30px;
-  width: auto;
-  margin: 0;
+.testimonials blockquote:before {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 100px solid #FFFFFF;
+  float: center;    
+  } 
+
+/* FINAL CALL TO ACTION */ 
+
+.final {
+  background: #F2F6F1;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.testimonials blockquote:after {
-  top: 100%;
-   left: 13%;
-   border: solid transparent;
-   content: " ";
-   height: 0;
-   width: 0;
-   position: absolute;
-   pointer-events: none;
-   border-top-color: #223A49;
-   border-width: 10px;
-   margin-left: -10px;
 
+.final p {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-.testimonials img {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  float: left;
-  display: inline-block;
-  margin: 20px 10px 0 0;
+.final span.final-call {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 30px;
+  padding-right: 40px;
 }
 
-.testimonials p.name {
-  float: left;
-  display: inline-block;
-  text-align: left;
-  font-size: 13px;
-  font-style: bold;
-  margin-top: 30px;
-}
-
-.staggered li {
-  margin-top: 20px;  
-}
-
-/* Final Call to Action */
-
-.container-action h2 {
- color: #223A49;
- text-align: center;
- margin-bottom: 20px;
-} 
-
-
-.container-action p {
- color: #223A49;
- text-align: center;
- margin-bottom: 100px;
-} 
-
-.container-action .btn {
-  position: relative;
-  bottom: 60px;
-  left: 550px;
-  right: 20px;
-}
-/* Footer */
+/* FOOTER */
 
 footer {
   background-color: #156B61;
-  background-image: linear-gradiant(to top, #156B61 0%, #156B61 50%, #6FD186 50%, #6FD186 100%);
   color: #FFFFFF;
   height: 150px;
   position: relative;
@@ -431,13 +428,12 @@ footer .logo {
   padding: 2.35em 0;
   margin: 0 auto;
   display: block;
+  float: right;
 }
 
 @media (min-width: 992px) {}
   footer {
     background-color: #156B61;
-    background-image: linear-gradient(to left,
-        #6FD186 0%, #6FD186 33.33337%, #156B61 33.33337%, #156B61 100%);
     height: 100px;
    }
    
