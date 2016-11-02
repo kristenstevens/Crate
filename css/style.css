@@ -442,36 +442,27 @@ footer .logo {
  /* SETTINGS */
 
   .settings .account {
-    float: right;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
 
   .settings .account img {
     height: 35px;
     width: 35px;
-    margin-left: 10px;
-    display: inline-block;
   }
 
   .settings .account p {
-    color: #000000;
+    color: #223A49;
     display: inline-block;
     vertical-align: center;
-    padding-top: 8px;
     font-weight: 400;
-    margin: 0 0 0 10px;
 }    
 
 .settings .account a {
-  color: #000000;
+  color: #223A49;
   text-decoration: none;
   text-align: right;
-  margin-right: 10px;
-  margin-top: 8px;
 }
 
  /* DASHBOARD */
@@ -497,7 +488,7 @@ footer .logo {
     text-align: center;
  }
 
- .left-nav .items {
+ .items li {
     padding: 0 6%;
  }
 
@@ -531,8 +522,9 @@ footer .logo {
     margin-right: 8px;
   } 
 
-  .left-nav .active li {
-    background: #FFFFFF;
+  .active {
+    background: rgba(255, 255, 255, .30);
+    padding-top: 5px;
   }
 
 /* CONTENT */
