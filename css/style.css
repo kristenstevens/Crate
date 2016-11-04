@@ -439,32 +439,6 @@ footer .logo {
    }
  }
 
- /* SETTINGS */
-
-  .settings {
-    position: absolute;
-    top: 0px;
-    right:0px; 
-  }
-
-  .settings .account img {
-    height: 35px;
-    width: 35px;
-  }
-
-  .settings .account p {
-    color: #223A49;
-    display: inline-block;
-    vertical-align: center;
-    font-weight: 400;
-}    
-
-.settings .account a {
-  color: #223A49;
-  text-decoration: none;
-  text-align: right;
-}
-
  /* DASHBOARD */
 
  .dashboard {
@@ -605,6 +579,7 @@ footer .logo {
   float: right;
   width: 98%;
   position: relative;
+  background-color: #F2F6F1;
 }  
 
 .content .header {
@@ -706,6 +681,34 @@ footer .logo {
   line-height: 18px;
   margin: 5px 0 0;
 }
+ /* SETTINGS */
+ .settings {
+   position:relative;
+   width:25%;
+     float:right;
+     margin:-75px;
+ }
+
+ .settings img {
+   height:35px;
+   width:35px;
+   border-radius: 50%;
+   margin-left:10px;
+   display: inline-block;
+ }
+ .settings p {
+   display: inline-block;
+   vertical-align: top;
+   padding-top: 8px;
+   font-weight: 400;
+ }
+ .settings a {
+   color:#333333;
+   text-decoration: none;
+   text-align: left;
+   float: right;
+   margin:-5px 5px 0px 0;
+ }
 
 /* LARGE MOBILE DEVICE */
 
