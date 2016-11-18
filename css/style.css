@@ -686,14 +686,14 @@ footer .logo {
    position:relative;
    width:25%;
      float:right;
-     margin:-75px;
+     margin:-95px;
  }
 
  .settings img {
    height:35px;
    width:35px;
    border-radius: 50%;
-   margin-left:10px;
+   margin-left: 10px;
    display: inline-block;
  }
  .settings p {
@@ -709,6 +709,7 @@ footer .logo {
    float: right;
    margin:-5px 5px 0px 0;
  }
+ 
 
 /* LARGE MOBILE DEVICE */
 
